@@ -28,13 +28,13 @@ console.log(errorDOM);
 
 console.clear();
 
-const mainPDOM = document.querySelectorAll('main > p:nth-oof-type(2)');
+const mainPDOM = document.querySelectorAll('main > p:nth-of-type(2)');
 console.log(mainPDOM.textContent);
 
-const mainP2DOM = document.querySelector('main > p:nth-of-type');
+const mainP2DOM = document.querySelector('main > p:nth-of-type(2)');
 console.log(mainP2DOM.textContent);
 
-const p2DOM = document.querySelector('p:nth-of-type');
+const p2DOM = document.querySelector('p:nth-of-type(2)');
 console.log(p2DOM.textContent);
 
 const classMainTitle = document.querySelectorAll('.main-title');
