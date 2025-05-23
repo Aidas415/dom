@@ -10,13 +10,16 @@ let time = 0;
 
 function changeTitle() {
     time++;
-    if (time > 6) {
-        clearInterval(timer);
-    }
+    
+    
     if (time % 2 === 0) {
         titleDOM.textContent = `Dokument (${time})`;
     } else {
         titleDOM.textContent = `${title} (${time})`;
+    }
+
+    if (time > 6) {
+        clearInterval(timer);
     }
 }
 
@@ -33,7 +36,7 @@ for (const liDOM of liListDOM) {
 
     if (vegetables[index]) {
         liDOM.classList.add('zuikio-darzove');
-    }else {
+    } else {
         liDOM.classList.add('zuikio-darzo-error');
     }
 
