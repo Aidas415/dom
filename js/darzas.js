@@ -1,3 +1,7 @@
+import {header} from "./header.js"
+
+header();
+
 const titleDOM = document.querySelector('title');
 const h1DOM = document.querySelector('h1');
 const title = 'zuikio daržas';
@@ -25,7 +29,6 @@ function changeTitle() {
 
 const timer = setInterval(changeTitle, 1000);   
 
-
 const liListDOM = document.querySelectorAll('li');
 const vegetables = ['pomidoras', 'agurkas', 'svogūnas', 'bulvė', 'dobiliukai'];
 
@@ -42,13 +45,3 @@ for (const liDOM of liListDOM) {
 
     index++;
 }
-
-
-
-
-
-
-
-
-
-
