@@ -34,7 +34,7 @@
     background-color: #ddd;
     padding: 0.5rem 1rem;
 }
-.list .action {
+.list .actions {
     display: flex;
     gap: 1rem;
 }
@@ -46,6 +46,22 @@
     font-size: 1rem;
     padding: 0.2rem 0.5rem;
 }
+
 .list .content {
     padding: 0.5rem 1rem;
 }
+.list .content.text p {
+    display: block;
+}
+.list .content.text form {
+    display: none;
+}
+
+.list .content.form p {
+    display: none;
+}
+.list .content.form form {
+    display: flex;
+}
+
+
