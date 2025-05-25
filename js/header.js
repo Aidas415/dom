@@ -12,7 +12,8 @@ export function header(isMainPage = false) {
             <a href="${path}add-block/">Add block</a>
             <a href="${path}add-todo/">Add todo</a>
             <a href="${path}todo/">Todo</a>
-            <a href="${path}todo-better/">Todo</a>
+            <a href="${path}todo-better/">Todo better</a>
+            <a href="${path}krepsinis/">krepsinis</a>
         </nav>
     </header>`);
 }
