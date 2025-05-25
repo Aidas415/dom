@@ -24,13 +24,48 @@ appDOM.innerHTML = `
         </div>
     </div>
 </div>
-<div class="history">
-    <div class="entry home">Pirma komanda pelnė 1 tašką.</div>
-    <div class="entry away">Antra komanda pelnė 3 taškus.</div>
-</div>    
+<div class="history"></div>    
 `;
 
 const [homeResultDOM, awayResultDOM] = appDOM.querySelectorAll('.result');
 const [home1, home2, home3, away1, away2, away3] = appDOM.querySelectorAll('button');
-const historyDOM = appDOM.querySelector('history');
+const historyDOM = appDOM.querySelector('.history');
 
+let homeScore = 0;
+let awayScore = 0;
+
+home1.addEventListener('click', () => {
+    homeScore += 1;
+    homeResultDOM.textContent = homeScore;
+    historyDOM.insertAdjacentHTML('afterbegin', '<div class="entry home">Namų komanda pelnė 1 tašką.</div>');
+});
+
+home2.addEventListener('click', () => {
+    homeScore += 2;
+    homeResultDOM.textContent = homeScore;
+    historyDOM.insertAdjacentHTML('afterbegin', '<div class="entry home">Namų komanda pelnė 2 taškus.</div>');
+});
+
+home3.addEventListener('click', () => {
+    homeScore += 3;
+    homeResultDOM.textContent = homeScore;
+    historyDOM.insertAdjacentHTML('afterbegin', '<div class="entry home">Namų komanda pelnė 3 taškus.</div>');
+});
+
+away1.addEventListener('click', () => {
+    awayScore += 1;
+    awayResultDOM.textContent = awayScore;
+    historyDOM.insertAdjacentHTML('afterbegin', '<div class="entry away">Svečių komanda pelnė 1 tašką.</div>');
+});
+
+away2.addEventListener('click', () => {
+    awayScore += 2;
+    awayResultDOM.textContent = awayScore;
+    historyDOM.insertAdjacentHTML ('afterbegin', '<div class="entry away">Svečių komanda pelnė 2 taškus.</div>');
+});
+
+away3.addEventListener('click', () => {
+    awayScore += 3;
+    awayResultDOM.textContent = awayScore;
+    historyDOM.insertAdjacentHTML('afterbegin', '<div class="entry away">Svečių komanda pelnė 3 taškus.</div>');
+});
