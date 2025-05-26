@@ -29,7 +29,7 @@ const scores = new Array(teams.length).fill(0);
 for (let i = 0; i < buttonsDOM.length; i++) {
     buttonsDOM[i].addEventListener('click', () => {
         const team = +buttonsDOM[i].dataset.team;
-        const points = buttonsDOM[i].textContent;
+        const points = +buttonsDOM[i].textContent;
         scores[team] += points;
         resultsDOM[team].textContent = scores[team];
         historyDOM.insertAdjacentHTML(
